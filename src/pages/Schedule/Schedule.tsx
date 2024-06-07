@@ -1,3 +1,4 @@
+import AppHeader from '../../components/AppHeader/AppHeader';
 import Calendar from '../../components/Calendar/Calendar';
 import Navigation from '../../components/Navigation/Navigation';
 import styles from './Schedule.module.scss';
@@ -7,8 +8,8 @@ function Schedule() {
         <div className={styles.homepage}>
             <Navigation />
             <div className={styles.homepage__container}>
-                <header>header</header>
-                <div>actions</div>
+            <AppHeader />
+            <div>actions</div>
                 <Calendar />
                 {/* <div>calendar</div> */}
                 {/* <Counter /> */}

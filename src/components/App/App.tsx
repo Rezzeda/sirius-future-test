@@ -3,7 +3,7 @@ import { Routes, Route } from 'react-router-dom'
 import Home from '../../pages/Home/Home.tsx'
 import Login from '../../pages/Login/Login.tsx'
 import Schedule from '../../pages/Schedule/Schedule.tsx'
-import UserPage from '../../pages/UserPage/UserPage.tsx'
+// import UserPage from '../../pages/UserPage/UserPage.tsx'
 
 function App() {
   return (
@@ -12,7 +12,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
         <Route path="/schedule" element={<Schedule />} />
-        <Route path="/user" element={<UserPage />} />
+        {/* <Route path="/user" element={<UserPage />} /> */}
         <Route path="*" element={<h1>404 Not Found</h1>} />
       </Routes>
     </div>
