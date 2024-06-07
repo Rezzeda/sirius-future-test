@@ -2,6 +2,7 @@ import { Counter } from "../../components/Counter/Counter";
 import styles from "./Home.module.scss";
 import Navigation from "../../components/Navigation/Navigation";
 import Calendar from "../../components/Calendar/Calendar";
+import UserPage from "../../pages/UserPage/UserPage";
 
 function Home() {
     return (
@@ -9,8 +10,9 @@ function Home() {
             <Navigation />
             <div className={styles.homepage__container}>
                 <header>header</header>
-                <div>actions</div>
-                <Calendar />
+                <UserPage />
+                {/* <div>actions</div> */}
+                {/* <Calendar /> */}
                 {/* <div>calendar</div> */}
                 {/* <Counter /> */}
             </div>

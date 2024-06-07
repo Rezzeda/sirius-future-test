@@ -1,4 +1,51 @@
 .banner {
     position: absolute;
-    bottom: 0px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    bottom: 24px;
+    background-color: #FFFFFF;
+    width: 196px;
+    padding: 16px;
+    background-image: url(../../images/gift-banner.png);
+    background-repeat: no-repeat;
+    background-size: 81.54px 98.71px;
+    background-position: right bottom;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    &__title {
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: 400;
+        color: #323854;
+    }
+
+    &__subtitle {
+        font-size: 10px;
+        line-height: 12px;
+        font-weight: 300;
+        color: #323854;
+    }
+
+    &__btn {
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 68px;
+        height: 32px;
+        border: none;
+        border-radius: 15px;
+        font-size: 10px;
+        line-height: 12px;
+        font-weight: 300;
+        color: #323854;
+        background-color: #D8ECFF;
+        transition: opacity 0.3s;
+    }
+    &__btn:hover {
+        opacity: 70%;
+    }
 }
