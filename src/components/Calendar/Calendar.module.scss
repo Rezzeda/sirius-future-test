@@ -1,0 +1,53 @@
+.calendar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.header button {
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    width: 100%;
+}
+
+.dayOfWeek {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.day {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 10px 0;
+    border: 1px solid #ccc;
+}
+
+.prevNextMonthDay {
+    opacity: 0.6;
+}
+
+.todayButton {
+    margin-top: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+}

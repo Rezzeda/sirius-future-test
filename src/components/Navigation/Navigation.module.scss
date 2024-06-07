@@ -1,0 +1,13 @@
+.menu {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    // width: 236px;
+    // height: 704px;
+
+    &__nav {
+        width: 236px;
+        height: 704px;
+        background: red;
+    }
+}

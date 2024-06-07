@@ -1,0 +1,10 @@
+.homepage {
+    display: flex;
+    flex-direction: row;
+
+    &__container {
+        width: 1072px;
+        height: 573px;
+        background-color: aquamarine;
+    }
+}
