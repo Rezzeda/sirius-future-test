@@ -72,7 +72,7 @@ const AppHeader: React.FC = () => {
                         ))}
                     </ul>
                     <NavLink
-                        to={'#'}
+                        to={'/login'}
                         className={styles.logoutButton}
                     >
                         Выход
