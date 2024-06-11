@@ -3,7 +3,6 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://Rezzeda.github.io/sirius-future-test/",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
