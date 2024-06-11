@@ -1,0 +1,78 @@
+.LessonsLeft {
+    &__container {
+        width: 344px;
+        height: 372px;
+        border-radius: 30px;
+        border: 1px solid #7362BC;
+        background-color: #FFFFFF;
+        padding-top: 28px;
+        padding-left: 28px;
+
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 2;
+    }
+
+    &__title {
+        font-size: 24px;
+        line-height: 24px;
+        font-weight: 400;
+        margin-bottom: 16px;
+    }
+
+    &__list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        overflow-y: auto;
+        height: 198px;
+        scrollbar-width: thin;
+        scrollbar-color: #EEEEFF #fff;
+        &::-webkit-scrollbar {
+            width: 4px;
+        }
+    }
+
+    &__item {
+        padding: 20px 0;
+        padding-right: 24px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        &_text {
+            font-size: 16px;
+            line-height: 20px;
+            font-weight: 400;
+            color: currentColor;
+        }
+        &_count {
+            width: 40px;
+            height: 40px;
+            background-color: #EEEEFF;
+            border-radius: 50%;
+            padding: 10px;
+            text-align: center;
+        }
+    }
+
+    &__button {
+        box-sizing: border-box;
+        width: 288px;
+        min-height: 40px;
+        margin-top: 36px;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 30px;
+        background-color: #DECFFF;
+        color: currentColor;
+        cursor: pointer;
+        transition: opacity 0.3s;
+
+        &:hover {
+            opacity: 70%;
+        }
+    }
+}

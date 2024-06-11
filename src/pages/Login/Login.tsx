@@ -1,8 +1,12 @@
+// import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 import styles from "./Login.module.scss";
 import logo from "../../images/Logomark_1_.svg"
 import { FiEye, FiEyeOff } from 'react-icons/fi'; // используем иконки из react-icons
 import { useState } from "react";
+// import { useAppDispatch, useAppSelector } from "../../hooks/appHooks";
+// import { currentUserSelector } from "../../services/selectors";
+// import { loginUser } from "../../services/userSlice";
 
 enum Language {
     RU = 'RU',
@@ -20,6 +24,22 @@ function Login() {
     const handleLanguageChange = (lang: Language) => {
         setLanguage(lang);
     };
+
+    // const [email, setEmail] = useState('');
+    // const [password, setPassword] = useState('');
+    // const dispatch = useAppDispatch();
+    // const navigate = useNavigate();
+    // const currentUser = useAppSelector(currentUserSelector);
+
+    // const handleLogin = (e: React.FormEvent) => {
+    //     e.preventDefault();
+    //     dispatch(loginUser({ email, password }));
+    //     if (currentUser) {
+    //         navigate('/calendar');
+    //     } else {
+    //         alert('Неправильный email или пароль');
+    //     }
+    // };
 
     return (
         <div className={styles.login}>

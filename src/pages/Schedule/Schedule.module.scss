@@ -1,10 +1,12 @@
-.homepage {
+.schedulePage {
     display: flex;
     flex-direction: row;
 
     &__container {
-        width: 1072px;
-        height: 573px;
-        // background-color: aquamarine;
+        width: 1154px;
+    }
+
+    &__calendar {
+        padding: 20px 32px;
     }
 }
