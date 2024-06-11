@@ -1,0 +1,36 @@
+.banner {
+    width: 526px;
+    height: 248px;
+    background-color: #7362BC;
+    border-radius: 30px;
+    background-image: url(../../images/banner-sale.png);
+    background-repeat: no-repeat;
+    background-size: 80% auto;
+    background-position: 310px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    justify-content: center;
+
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 1;
+
+    &__title {
+        max-width: 366px;
+        padding-left: 40px;
+        font-size: 32px;
+        line-height: 32px;
+        font-weight: 400;
+        color: #FFFFFF;
+    }
+    &__subtitle {
+        max-width: 294px;
+        padding-left: 40px;
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: 300;
+        color: #FFFFFF;
+    }
+}

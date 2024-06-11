@@ -1,0 +1,66 @@
+.timer {
+    width: 344px;
+    min-height: 248px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    padding: 28px;
+    text-align: center;
+    background-color: #FFF1CB;
+    border-radius: 30px;
+
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 1;
+
+    &__title {
+        font-size: 20px;
+        line-height: 20px;
+        font-weight: 400;
+    }
+
+    &__container {
+        display: flex;
+        flex-direction: row;
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+        gap: 12px;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: row;
+        gap: 0.2em;
+        &_count {
+            font-size: 36px;
+            line-height: 35px;
+            font-weight: 400;
+        }
+        &_title {
+            font-size: 15px;
+            line-height: 20.25px;
+            font-weight: 400;
+            align-self: flex-end;
+        }
+    }
+
+    &__button {
+        width: 220px;
+        min-height: 48px;
+        padding: 10px 20px;
+        border: 1px dashed #000;
+        border-radius: 30px;
+        background-color: transparent;
+        color: currentColor;
+        cursor: pointer;
+        transition: opacity 0.3s;
+
+        &:hover {
+            opacity: 70%;
+        }
+    }
+}

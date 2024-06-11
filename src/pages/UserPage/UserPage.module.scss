@@ -1,10 +1,49 @@
 .homepage {
     display: flex;
     flex-direction: row;
+    padding-left: 20px;
 
     &__container {
-        width: 1072px;
         height: 573px;
-        // background-color: aquamarine;
+        display: grid;
+        gap: 20px;
+        padding: 20px 32px;
+    }
+    
+    &__links {
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+        grid-column-start: 5;
+        grid-column-end: 6;
+        grid-row-start: 1;
+        grid-row-end: 1;
+    }
+
+    &__link {
+        display: flex;
+        text-decoration: none;
+        color: currentColor;
+        width: 162px;
+        height: 114px;
+        border-radius: 20px;
+        padding: 16px;
+        transition: opacity 0.3s;
+
+        &:hover {
+            opacity: 70%;
+        }
+            
+        &_top {
+            background-color: #D8ECFF;
+        }
+
+        &_bottom {
+            background-color: #E8CBFF;
+        }
+
+        &_icon {
+            align-self: flex-end;
+        }
     }
 }

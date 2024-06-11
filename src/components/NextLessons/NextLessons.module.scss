@@ -1,0 +1,142 @@
+.NextLessons{
+    &__container {
+        width: 708px;
+        height: 372px;
+        border-radius: 30px;
+        border: 1px solid #7362BC;
+        padding: 28px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        grid-column-start: 2;
+        grid-column-end: 6;
+        grid-row-start: 2;
+        grid-row-end: 2;
+    }
+
+    &__title {
+        font-size: 24px;
+        line-height: 24px;
+        font-weight: 400;
+        margin-bottom: 16px;
+    }
+
+    &__list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid #EEEEFF;
+        padding: 7px 0;
+
+        &_btns {
+            display: flex;
+            flex-direction: row;
+            gap: 4px;
+        }
+
+        &_button_dark {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 30px;
+            background-color: #DECFFF;
+            color: currentColor;
+            cursor: pointer;
+
+            &:hover {
+                background-color: #8D7FC7;
+            }
+
+            &:disabled {
+                background-color: transparent;
+                border: 1px solid #EEEEFF;
+                cursor: default;
+            }
+        }
+
+        &_button_light {
+            color: currentColor;
+            background-color: transparent;
+            border: 1px solid #8D7FC7;
+            border-radius: 30px;
+            padding: 10px 20px;
+            cursor: pointer;
+
+            &:hover {
+                background-color: #8D7FC7;
+            }
+
+            &:disabled {
+                background-color: transparent;
+                border: 1px solid #EEEEFF;
+                cursor: default;
+            }
+        }
+    }
+
+    &__date {
+        color: currentColor;
+        font-weight: 400;
+
+        &_day {
+            font-size: 32px;
+            line-height: 32px;
+            text-align: center;
+        }
+        &_month {
+            font-size: 12px;
+            line-height: 16.2px;
+            text-align: center;
+        }
+    }
+
+    &__lesson {
+        font-size: 16px;
+        line-height: 21.6px;
+        font-weight: 400;
+        color: currentColor;
+    }
+    &__time {
+        font-size: 12px;
+        line-height: 16.2px;
+        font-weight: 400;
+        color: currentColor;
+    }
+
+    &__teacher {
+        display: flex;
+        flex-direction: row;
+        gap: 2px;
+        align-items: center;
+
+        &_name
+        {font-size: 12px;
+        line-height: 12px;
+        font-weight: 300;
+        color: currentColor;}
+    }
+
+    &__button {
+        width: 344px;
+        min-height: 40px;
+        margin-top: 36px;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 30px;
+        background-color: #DECFFF;
+        color: currentColor;
+        cursor: pointer;
+        align-self: center;
+        transition: opacity 0.3s;
+
+        &:hover {
+            opacity: 70%;
+        }
+    }
+}

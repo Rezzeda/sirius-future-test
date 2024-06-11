@@ -1,53 +1,111 @@
 .calendar {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    font-family: Arial, sans-serif;
-}
+    padding-left: 32px;
+    padding-right: 32px;
 
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    margin-bottom: 10px;
-}
+    &__header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 10px;
 
-.header button {
-    padding: 5px 10px;
-    cursor: pointer;
+        &_btn {
+            padding: 5px 10px;
+            cursor: pointer;
+            background-color: transparent;
+            border: none;
+            transition: opacity 0.3s;
+
+            &:hover {
+                opacity: 70%;
+            }
+        }
+
+        &_title {
+            font-size: 16px;
+            line-height: 20px;
+            font-weight: 700;
+            text-align: center;
+        }
+    }
+
+    &__today {
+        text-decoration: none;
+        padding: 8px 16px;
+        cursor: pointer;
+        color: currentColor;
+        // background-color: transparent;
+        background-color: #FFFFFF;
+        border: 1px solid #8D7FC7;
+        border-radius: 30px;
+        margin-left: 32px;
+        margin-right: 16px;
+    
+        &:hover {
+            background-color: #8D7FC7;
+        }
+    
+        &:disabled {
+            background-color: transparent;
+            border: 1px solid #EEEEFF;
+            cursor: default;
+        }
+    }
+
+    &__question {
+        border: none;
+        margin: 0;
+        padding: 0;
+        background-color: transparent;
+
+        &:hover {
+            opacity: 60%;
+        }
+    }
 }
 
 .grid {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
-    gap: 5px;
     width: 100%;
-}
+    background-color: #FFFFFF;
 
-.dayOfWeek {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: bold;
-    margin-bottom: 5px;
+
+    &__dayOfWeek {
+        display: flex;
+        justify-content: flex-end;
+        color: #79747F;
+        padding-right: 6px;
+    }
 }
 
 .day {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
     width: 100%;
-    padding: 10px 0;
+    min-height: 101px;
+    padding: 4px 2px;
     border: 1px solid #ccc;
+
+    &_number {
+        align-self: flex-end;
+    }
 }
 
 .prevNextMonthDay {
     opacity: 0.6;
 }
 
-.todayButton {
-    margin-top: 10px;
-    padding: 5px 10px;
-    cursor: pointer;
+.lesson {
+    background-color: #D7F0D6;
+    align-self: flex-end;
+    border: 0.5px solid #BBE7B9;
+    margin-bottom: 2px;
+    display: flex;
+    border-radius: 2px;
+    font-size: 12px;
+    line-height: 16.2px;
+    font-weight: 400;
+    padding: 4px;
 }

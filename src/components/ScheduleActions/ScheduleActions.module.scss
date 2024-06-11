@@ -1,0 +1,46 @@
+.ScheduleActions {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 20px 29px;
+
+    &__select {
+        display: block; 
+        font-size: 12px; 
+        font-weight: 400; 
+        color: #79747F; 
+        line-height: 16.2px; 
+        padding: 10px 12px 10px 12px;
+        width: 253px;
+        height: 36px;
+        margin: 0; 
+        border: 1px solid #ECECEC;
+        border-radius: 8px;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
+        background-image: url('../../images/select-arrow.svg'); 
+        background-repeat: no-repeat, repeat;
+        background-position: right .7em top 50%, 0 0;
+
+        &::-ms-expand { display: none; }
+        &:hover { border-color: currentColor; }
+        &:focus {
+            box-shadow: 0 0 1px 3px #DECFFF; 
+            box-shadow: 0 0 0 3px -moz-mac-focusring; 
+            outline: none; }
+    }
+
+    &__btn {
+        width: 344px;
+        min-height: 40px;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 30px;
+        background-color: #DECFFF;
+        color: currentColor;
+        cursor: pointer;
+        align-self: center;
+    }
+}
